@@ -121,7 +121,7 @@
                 <i class="icon bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Телефон</h3>
-                  <p>+359 99 999 9999</p>
+                  <p>0887 909 707</p>
                 </div>
               </div>
             </div><!-- End Info Item -->
