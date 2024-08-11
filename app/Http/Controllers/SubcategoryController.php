@@ -99,6 +99,18 @@ class SubcategoryController extends Controller
             unset($input['image']);
         }
 
+        if ($request->has('delete_photo') && $subcategory->image) {
+            //delete old image
+            if ($subcategory->image)
+            {
+                $filePath = public_path($subcategory->image);
+                $this->fileService->deleteFileFromPublicStorage($filePath);
+            }
+            
+            // Set the photo path in the database to null or remove the path
+            $input['image'] = null;
+        }
+
         $subcategory->update($input);
 
         return to_route('subcategory.index')->with('message', 'Subcategory was updated');

@@ -99,6 +99,18 @@ class ItemController extends Controller
             unset($input['image']);
         }
 
+        if ($request->has('delete_photo') && $item->image) {
+            //delete old image
+            if ($item->image)
+            {
+                $filePath = public_path($item->image);
+                $this->fileService->deleteFileFromPublicStorage($filePath);
+            }
+            
+            // Set the photo path in the database to null or remove the path
+            $input['image'] = null;
+        }
+
         $item->update($input);
 
         return to_route('item.index')->with('message', 'Item was updated');

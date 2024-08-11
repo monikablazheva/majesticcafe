@@ -19,12 +19,6 @@
                         <dd class = "col-sm-10">
                             {{ $subcategory->category->name }}
                         </dd>
-                        <dt class = "col-sm-2">
-                            Снимка
-                        </dt>
-                        <dd class = "col-sm-10">
-
-                        </dd>
                     </dl>
                 </div>
                 <div class="d-flex align-items-center gap-3">
