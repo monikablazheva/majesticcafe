@@ -1,0 +1,191 @@
+.img-mj-idx {       
+    display: block;   
+    max-height:40px;
+    width: auto;
+    height: auto;
+}
+
+.img-mj-details {
+    display: block;   
+    max-height:250px;
+    width: auto;
+    height: auto;
+}
+
+.img-mj-menu {
+  display: block;   
+  max-height:100px;
+  width: auto;
+  height: auto;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #9bbb30;
+    background-color: transparent;
+    border-color: var(--bs-nav-tabs-link-active-border-color);
+  }
+  
+  .nav-tabs .nav-link {
+    margin-bottom: calc(-1* var(--bs-nav-tabs-border-width));
+    border: none;
+    border-top-left-radius: var(--bs-nav-tabs-border-radius);
+    border-top-right-radius: var(--bs-nav-tabs-border-radius);
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: black;
+    background-color: #ffffff;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+  }
+
+  .accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none;
+}
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #ffffff;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.content {
+    flex: 1;
+}
+
+.menu-group {
+  margin-bottom: 1rem;
+}
+
+.menu-item {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+/* .menu-item {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+} */
+.menu-item:not(:last-child) {
+  border-bottom: 1px solid #9e8a7080;
+}
+
+.menu-item img {
+  max-width: 150px; /* Increase the size of the image */
+  margin-right: 1rem; /* Add margin to the right */
+}
+
+.menu-item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Stack the text and price vertically */
+}/* 
+.menu-item-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+.menu-item-text {/* 
+  align-self: center; */
+  font-family: var(--nav-font);
+  /* color: color-mix(in srgb, var(--default-color), transparent 50%); */
+  color: #5e524486;
+  /* flex: 1; */
+  margin-bottom: 0.5rem;
+  
+}
+.menu-item-price {
+  font-family: var(--nav-font);
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  /* margin-left: 0.5rem;
+  padding-right: 0.5rem; */
+}
+
+.menu-item.no-image .menu-item-text {
+  margin-left: 0;
+}
+.card-body {
+  padding: 0; 
+}
+.card-header, .accordion-button, .accordion-button:not(.collapsed) {
+  background-color: #ffffff;
+  box-shadow: none; /* Remove box-shadow if it exists */
+  
+}
+
+
+.menu-section-heading {
+  border-bottom: none; /* Remove bottom border if it exists */
+  box-shadow: none; /* Remove box-shadow if it exists */
+}
+
+
+/* Global border-radius for common elements */
+div, img, button, input, textarea {
+  border-radius: 8px; /* Adjust the value as needed */
+}
+
+/* Additional styling for specific components */
+.container, .menu-section, .menu-item, .button, .input-field {
+  border-radius: 8px; /* Consistent rounding for app components */
+}
+
+/* Example class for rounded corners */
+.rounded {
+  border-radius: 8px; /* Apply to specific elements as needed */
+}
+
+/* Example class for specific UI components */
+.menu-section-heading, .menu-item-content, .card {
+  border-radius: 8px; /* Apply rounded corners to specific sections */
+}
+
+/* Additional styling for more specific elements if necessary */
+.menu-item-image {
+  border-radius: 8px; /* Rounded image corners */
+}
+
+.menu-item-details, .price-tag {
+  border-radius: 8px; /* Rounded corners for details and price tag */
+}
+
+/* Ensuring buttons and inputs have consistent rounding */
+button, .btn, input, textarea {
+  border-radius: 8px; /* Consistent border-radius for form elements */
+}
+
+.subcategory-item {
+  border:none;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 10px 0;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card{
+  border-color:  transparent;
+}
+table tr td, table tr th{
+  background-color: transparent !important;
+}
