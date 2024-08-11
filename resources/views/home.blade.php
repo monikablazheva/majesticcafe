@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-                    <img src="assets/img/hero-salad.png" class="img-fluid animated" alt="">
+                    <img src="assets/img/hero-salad.webp" class="img-fluid animated" alt="">
                 </div>
             </div>
         </div>
