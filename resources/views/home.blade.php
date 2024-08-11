@@ -54,7 +54,7 @@
                     <img src="assets/img/majestic-about.jpg" class="img-fluid mb-4" alt="">
                     <div class="book-a-table">
                         <h3>Запазете своята маса</h3>
-                        <p>+359 99 999 9999</p>
+                        <p>0887 909 707</p>
                     </div>
                 </div>
                 <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">

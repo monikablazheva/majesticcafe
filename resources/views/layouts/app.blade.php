@@ -120,7 +120,7 @@
                         <div>
                             <h4>Контакти</h4>
                             <p>
-                                <strong>Телефон:</strong> <span>+359 99 999 9999</span><br>
+                                <strong>Телефон:</strong> <span>0887 909 707</span><br>
                                 <strong>Имейл:</strong> <span>majesticcafe@example.com</span><br>
                             </p>
                         </div>
