@@ -32,16 +32,16 @@
                         </div>
                         <div class="accordion accordion-flush" id="accordionExample">
                             @foreach ($category->subcategories as $k => $subcategory)
-                                <div class="card menu-group subcategory-item" style="background-color: #f6ecdbee;">
+                                <div class="card menu-group subcategory-item" style="background-color: #f6ecdb;">
                                     <div class="card-header"
-                                        style="padding: 0%; border-width: 0px; background-color: #f6ecdbee;"
+                                        style="padding: 0%; border-width: 0px;"
                                         id="heading{{ $k }}">
 
                                         <button class="accordion-button {{ $k !== 0 ? 'collapsed' : '' }}" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapse{{ $k }}"
                                             aria-expanded="{{ $k === 0 ? 'true' : 'false' }}"
                                             aria-controls="collapse{{ $k }}"
-                                            style="font-size: 1.5rem; padding: 0.5rem; background-color: #f6ecdbee;">
+                                            style="font-size: 1.5rem; padding: 0.5rem; background-color: #f6ecdb;">
                                             @if ($subcategory->image)
                                                 <img class="avatar avatar-64 rounded-circle shadowed-image"
                                                     src="{{ asset($subcategory->image) }}" style="margin-right: 15px;">
@@ -57,7 +57,7 @@
                                             @foreach ($subcategory->items as $item)
                                                 @if ($item->image)
                                                     <div class="menu-item"
-                                                        style="border-radius: 0px; background-color: #f6ecdbee;">
+                                                        style="border-radius: 0px; background-color: #f6ecdb;">
                                                         <img src="{{ asset($item->image) }}" width="150px" height="150px"
                                                             alt="Item Image">
                                                         <div class="menu-item-content">
@@ -87,7 +87,7 @@
                                                     </div>
                                                 @else
                                                     <div class="menu-item no-image"
-                                                        style="border-radius: 0px; background-color: #f6ecdbee;">
+                                                        style="border-radius: 0px; background-color: #f6ecdb;">
                                                         <div class="menu-item-content">
                                                             <div class="menu-item-text">
                                                                 <h5>{{ $item->name }}</h5>
