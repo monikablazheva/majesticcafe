@@ -51,8 +51,8 @@
                 <nav id="navmenu" class="navmenu">
                     <ul>
                         <li><a href="{{ route('menu') }}">Меню</a></li>
-                        <li><a href="">Събития</a></li>
-                        <li><a href="">За нас</a></li>
+                        {{-- <li><a href="">Събития</a></li>
+                        <li><a href="">За нас</a></li> --}}
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
