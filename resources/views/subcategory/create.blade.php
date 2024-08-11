@@ -31,6 +31,8 @@
                     <div class="mb-3">
                         <label class="form-label">Снимка</label>
                         <input type="file" name="image" class="form-control">
+                        <label class="text-warning">Маскимален размер: 100КВ</label> <br>
+                        <label class="text-warning">Маскимална резолюция: 300х300 px</label>
                     </div>
                     <button type="submit" class="btn btn-dark">Добави</button>
                 </form>

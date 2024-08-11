@@ -4,14 +4,19 @@
     <div class="row">
         <h1>Промяна</h1>
         <div class="row">
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="col-md-6">
                 <form action="{{ route('item.update', $item)}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
-                    <div class="mb-3">
-                        <label class="form-label">Име</label>
-                        <input type="text" class="form-control" value="{{$item->name}}" name='name'>
-                    </div>
                     <div class="mb-3">
                         <label class="form-label">Име</label>
                         <input type="text" class="form-control" value="{{$item->name}}" name='name'>
@@ -51,6 +56,8 @@
                     <div class="mb-3">
                         <label class="form-label">Снимка</label>
                         <input type="file" name="image" class="form-control">
+                        <label class="text-warning">Маскимален размер: 300КВ</label> <br>
+                        <label class="text-warning">Маскимална резолюция: 900х900 px</label>
                     </div>
                     <button type="submit" class="btn btn-dark">Запази</button>
                 </form>

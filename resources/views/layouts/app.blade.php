@@ -100,7 +100,7 @@
             class="bi bi-arrow-up-short"></i></a>
  --}}
 
-        <footer id="footer" class="footer dark-background">
+        <footer id="footer" class="footer dark-background mt-3">
 
             <div class="container">
                 <div class="row gy-3">
