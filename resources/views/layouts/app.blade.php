@@ -140,8 +140,8 @@
                     <div class="col-lg-3 col-md-6">
                         <h4>Последвайте ни</h4>
                         <div class="social-links d-flex">
-                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.facebook.com/majesticcafe2018/?locale=bg_BG" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/cafe_majestic?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
                         </div>
                     </div>
 

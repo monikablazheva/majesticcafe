@@ -3,7 +3,7 @@
 
 @section('content')
     <!-- Menu Section -->
-    <section id="menu" class="menu section ">
+    <section id="menu" class="menu section "{{--  style="background-image:url('assets/img/cool-background.png')" --}}>
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
@@ -33,8 +33,7 @@
                         <div class="accordion accordion-flush" id="accordionExample">
                             @foreach ($category->subcategories as $k => $subcategory)
                                 <div class="card menu-group subcategory-item" style="background-color: #f6ecdb;">
-                                    <div class="card-header"
-                                        style="padding: 0%; border-width: 0px;"
+                                    <div class="card-header" style="padding: 0%; border-width: 0px;"
                                         id="heading{{ $k }}">
 
                                         <button class="accordion-button {{ $k !== 0 ? 'collapsed' : '' }}" type="button"
@@ -113,7 +112,7 @@
                                                                 <div class="menu-item-price">
                                                                     {{ number_format($item->price, 2) }} лв.
                                                                 </div>
-                                                                
+
                                                             </div>
                                                         </div>
                                                     </div>
