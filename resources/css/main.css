@@ -792,7 +792,17 @@ section,
 .section-title {
   text-align: center;
   padding-bottom: 40px;
+  padding-top: 20px;
   position: relative;
+}
+
+.section-title h1 {
+  font-size: 44px;
+  font-weight: 600;
+}
+
+.section-title h1 .description-title {
+  color: var(--accent-color);
 }
 
 .section-title h2 {
@@ -810,7 +820,7 @@ section,
 .section-title p {
   color: var(--heading-color);
   margin: 10px 0 0 0;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 500;
   font-family: var(--heading-font);
 }
@@ -1138,7 +1148,7 @@ section,
 }
 
 .menu .nav-link i {
-  padding-right: 15px;
+  padding-right: 0;
   font-size: 48px;
 }
 
@@ -1161,13 +1171,14 @@ section,
 }
 
 .menu .nav-link.active {
+  padding: 0%;
   background-color: var(--background-color);
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
 .menu .tab-content .tab-header {
-  padding: 30px 0;
+  padding: 0px 0;
 }
 
 .menu .tab-content .tab-header p {

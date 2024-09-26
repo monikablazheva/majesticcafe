@@ -174,3 +174,23 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+document.addEventListener('DOMContentLoaded', function () {
+  const stickyTabs = document.querySelector('.sticky-tabs');
+  const navbarHeight = document.querySelector('.navbar').offsetHeight;
+  const offsetTop = stickyTabs.offsetTop;
+
+  window.addEventListener('scroll', function () {
+      if (window.pageYOffset > offsetTop - navbarHeight) {
+          stickyTabs.classList.add('fixed-top');
+          stickyTabs.style.top = navbarHeight + 'px';
+      } else {
+          stickyTabs.classList.remove('fixed-top');
+          stickyTabs.style.top = '';
+      }
+  });
+});
+
+$(document).ready(function(){
+  $("#myModal").modal('show');
+});

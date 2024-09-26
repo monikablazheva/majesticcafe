@@ -2,24 +2,39 @@
 
 
 @section('content')
-    <!-- Menu Section -->
-    <section id="menu" class="menu section "{{--  style="background-image:url('assets/img/cool-background.png')" --}}>
 
+    <!-- Menu Section -->
+    <section id="menu" class="p-0 menu section "{{--  style="background-image:url('assets/img/cool-background.png')" --}}>
         <!-- Section Title -->
+        
         <div class="container section-title" data-aos="fade-up">
             <h2>Меню</h2>
-            <p><span>Разгледайте нашето</span> <span class="description-title">Меню</span></p>
+            <h1><span>Разгледайте нашето</span> <span class="description-title">меню</span></h1>
         </div><!-- End Section Title -->
 
         <div class="container">
 
-            <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
+            {{-- <ul class="nav nav-tabs d-flex justify-content-center sticky-tabs" role="tablist"> --}}
+            <ul class="nav nav-tabs d-flex justify-content-center pb-2" role="tablist"> 
                 @foreach ($categoriesWithSubcat as $k => $category)
                     <li class="nav-item" role="presentation">
                         <button class="nav-link {{ $k === 0 ? 'active' : 'false' }}" id="{{ $category->id }}-tab"
                             data-bs-toggle="tab" data-bs-target="#{{ $category->id }}" type="button" role="tab"
                             aria-controls="{{ $category->id }}" aria-selected="{{ $k === 0 ? 'true' : 'false' }}"
-                            style="font-size: 1.2rem; ">{{ $category->name }}</button>
+                            style="font-weight: bold;">
+                            <div class="cat-icon-container">
+                                @if($k == 0)
+                                    <i class="fa-solid fa-utensils"></i>
+                                @elseif($k == 1)
+                                    <i class="fa-solid fa-stroopwafel"></i>
+                                @elseif($k == 2)
+                                <i class="fas fa-cocktail"></i>
+                                @elseif($k == 3)
+                                    <i class="fas fa-mug-hot"></i>
+                                @endif
+                                <div class="pt-1">{{ $category->name }}</div>
+                            </div>
+                        </button>
                     </li>
                 @endforeach
             </ul>

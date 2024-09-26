@@ -51,9 +51,6 @@
                 <nav id="navmenu" class="navmenu">
                     <ul>
                         <li><a href="{{ route('menu') }}">Меню</a></li>
-                        {{-- <li><a href="">Събития</a></li>
-                        <li><a href="">За нас</a></li> --}}
-                        <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -121,7 +118,7 @@
                             <h4>Контакти</h4>
                             <p>
                                 <strong>Телефон:</strong> <span>0887 909 707</span><br>
-                                <strong>Имейл:</strong> <span>majesticcafe@example.com</span><br>
+                                <strong>Имейл:</strong> <span>contact@majesticcafe.eu</span><br>
                             </p>
                         </div>
                     </div>

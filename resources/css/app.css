@@ -20,9 +20,9 @@
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    padding-right: 0;
     color: #9bbb30;
     background-color: transparent;
-    border-color: var(--bs-nav-tabs-link-active-border-color);
   }
   
   .nav-tabs .nav-link {
@@ -216,4 +216,22 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.sticky-tabs {
+  position: sticky;
+  top: 56px; /* Adjust based on the height of your navbar */
+  z-index: 1020;
+  background-color: #fff; /* Ensure it's not transparent */
+  width: 100%;
+  padding: 0.5rem 0; /* Optional: Adjust padding */
+}
+
+.cat-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height:normal;
 }
