@@ -21,7 +21,7 @@
                         <button class="nav-link {{ $k === 0 ? 'active' : 'false' }}" id="{{ $category->id }}-tab"
                             data-bs-toggle="tab" data-bs-target="#{{ $category->id }}" type="button" role="tab"
                             aria-controls="{{ $category->id }}" aria-selected="{{ $k === 0 ? 'true' : 'false' }}"
-                            style="font-weight: 700;">
+                            style="font-weight: 550;">
                             <div class="cat-icon-container">
                                 @if($k == 0)
                                     <i class="fa-solid fa-utensils"></i>
@@ -32,7 +32,7 @@
                                 @elseif($k == 3)
                                     <i class="fas fa-mug-hot"></i>
                                 @endif
-                                <div class="pt-1" style="font-size: 14px;">{{ $category->name }}</div>
+                                <div class="pt-1" style="font-size: 14px; font-family: Sofia Sans Condensed, sans-serif;">{{ $category->name }}</div>
                             </div>
                         </button>
                     </li>
