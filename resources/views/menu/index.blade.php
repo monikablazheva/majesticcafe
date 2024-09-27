@@ -32,7 +32,7 @@
                                 @elseif($k == 3)
                                     <i class="fas fa-mug-hot"></i>
                                 @endif
-                                <div class="pt-1" style="font-size: 14px; font-family: Sofia Sans Condensed, sans-serif;">{{ $category->name }}</div>
+                                <div class="pt-1" style="font-size: 16px; font-family: Sofia Sans Condensed, sans-serif;">{{ $category->name }}</div>
                             </div>
                         </button>
                     </li>
