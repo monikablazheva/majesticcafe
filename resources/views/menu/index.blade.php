@@ -21,7 +21,7 @@
                         <button class="nav-link {{ $k === 0 ? 'active' : 'false' }}" id="{{ $category->id }}-tab"
                             data-bs-toggle="tab" data-bs-target="#{{ $category->id }}" type="button" role="tab"
                             aria-controls="{{ $category->id }}" aria-selected="{{ $k === 0 ? 'true' : 'false' }}"
-                            style="font-weight: bold;">
+                            style="font-weight: 700;">
                             <div class="cat-icon-container">
                                 @if($k == 0)
                                     <i class="fa-solid fa-utensils"></i>
