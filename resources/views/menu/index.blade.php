@@ -15,7 +15,7 @@
         <div class="container">
 
             {{-- <ul class="nav nav-tabs d-flex justify-content-center sticky-tabs" role="tablist"> --}}
-            <ul class="nav nav-tabs d-flex justify-content-center pb-2" role="tablist"> 
+            <ul class="nav nav-tabs d-flex justify-content-center pb-2" role="tablist">
                 @foreach ($categoriesWithSubcat as $k => $category)
                     <li class="nav-item" role="presentation">
                         <button class="nav-link {{ $k === 0 ? 'active' : 'false' }}" id="{{ $category->id }}-tab"
@@ -32,7 +32,7 @@
                                 @elseif($k == 3)
                                     <i class="fas fa-mug-hot"></i>
                                 @endif
-                                <div class="pt-1">{{ $category->name }}</div>
+                                <div class="pt-1" style="font-size: 14px;">{{ $category->name }}</div>
                             </div>
                         </button>
                     </li>
