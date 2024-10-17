@@ -3,6 +3,42 @@
 
 @section('content')
 
+{{-- <div  id="popupOverlay">
+
+    <div  id="popup">
+
+        <span  id="closePopup">&times;</span>
+
+        <div class="ad-container">
+            <div class="ad-content">
+              <h1 class="ad-heading">Visit Our Special Events</h1>
+              <p class="ad-text">Join us for unforgettable dining experiences with live music, seasonal menus, and more.</p>
+              <a href="#events" class="ad-button">Explore Events</a>
+            </div>
+          </div>
+
+    </div>
+
+</div> --}}
+
+<div id="popupOverlay">
+    <div id="popup">
+      <span id="closePopup">&times;</span>
+
+      <div class="popup-image-container">
+        <img src="assets/img/events-2.webp" alt="Restaurant Event" class="popup-image">
+      </div>
+
+      <div class="ad-container">
+        <div class="ad-content">
+          <h1 class="ad-heading">Куиз вечери и турнири</h1>
+          <p class="ad-text">Разгледайте събитията ни на нашата Facebook страница</p>
+          <a id="submitButton" href="https://www.facebook.com/majesticcafe2018/events" target="_blank" rel="noopener noreferrer" class="ad-button">Събития</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- Menu Section -->
     <section id="menu" class="p-0 menu section "{{--  style="background-image:url('assets/img/cool-background.png')" --}}>
         <!-- Section Title -->

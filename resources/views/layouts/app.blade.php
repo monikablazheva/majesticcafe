@@ -49,7 +49,7 @@
                     style="padding-right:20px; padding-bottom:5px;">
                     <!-- Uncomment the line below if you also wish to use an image logo -->
                     <!-- <img src="assets/img/logo.png" alt=""> -->
-                    <h1 style="color: #9bbb30 !important;">Majestic cafe</h1>
+                    <h1 style="color: #9bbb30 !important; font-size: 24px;">Majestic <br/> BAR & Dinner</h1>
                 </a>
 
                 <nav id="navmenu" class="navmenu">
