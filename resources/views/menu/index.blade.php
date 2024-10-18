@@ -60,13 +60,13 @@
                             style="font-weight: 550;">
                             <div class="cat-icon-container">
                                 @if($k == 0)
-                                    <i class="fa-solid fa-utensils"></i>
+                                <i class="fa-solid fa-stroopwafel"></i>
                                 @elseif($k == 1)
-                                    <i class="fa-solid fa-stroopwafel"></i>
+                                    <i class="fas fa-mug-hot"></i>
                                 @elseif($k == 2)
                                 <i class="fas fa-cocktail"></i>
                                 @elseif($k == 3)
-                                    <i class="fas fa-mug-hot"></i>
+                                    <i class="fa-solid fa-utensils"></i>
                                 @endif
                                 <div class="pt-1" style="font-size: 16px; font-family: Sofia Sans Condensed, sans-serif;">{{ $category->name }}</div>
                             </div>
