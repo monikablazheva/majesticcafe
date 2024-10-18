@@ -5,16 +5,18 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreItemRequest;
 use App\Models\{Item, Subcategory, Quantity_type};
 use Illuminate\Http\Request;
-use App\Services\FileService;
+use App\Services\{FileService, SearchService};
 
 class ItemController extends Controller
 {
     protected FileService $fileService;
+    protected SearchService $searchService;
 
     public function __construct()
     {
         $this->middleware('auth');        
         $this->fileService = new FileService();
+        $this->searchService = new SearchService();
     }
 
     /**
@@ -22,7 +24,7 @@ class ItemController extends Controller
      */
     public function index()
     {
-        $items = Item::all();
+        $items = Item::paginate(10);
         return view('item.index', compact('items'));
     }
 
@@ -128,5 +130,14 @@ class ItemController extends Controller
 
         $item->delete();
         return to_route('item.index')->with('message', 'Item was deleted');
+    }
+
+    public function search(Request $request)
+    {
+        $searchTerm = $request->input('search');
+
+        $items = $this->searchService->search(new Item(), $searchTerm);
+
+        return view('item.index', compact('items'));
     }
 }

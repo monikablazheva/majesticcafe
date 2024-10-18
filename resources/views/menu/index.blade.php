@@ -2,8 +2,7 @@
 
 
 @section('content')
-
-{{-- <div  id="popupOverlay">
+    {{-- <div  id="popupOverlay">
 
     <div  id="popup">
 
@@ -21,28 +20,29 @@
 
 </div> --}}
 
-{{-- <div id="popupOverlay">
-    <div id="popup">
-      <span id="closePopup">&times;</span>
+    <div id="popupOverlay">
+        <div id="popup">
+            <span id="closePopup">&times;</span>
 
-      <div class="popup-image-container">
-        <img src="assets/img/events-2.webp" alt="Restaurant Event" class="popup-image">
-      </div>
+            <div class="popup-image-container">
+                <img src="assets/img/events-2.webp" alt="Restaurant Event" class="popup-image">
+            </div>
 
-      <div class="ad-container">
-        <div class="ad-content">
-          <h1 class="ad-heading">Куиз вечери и турнири</h1>
-          <p class="ad-text">Разгледайте събитията ни на нашата Facebook страница</p>
-          <a id="submitButton" href="https://www.facebook.com/majesticcafe2018/events" target="_blank" rel="noopener noreferrer" class="ad-button">Събития</a>
+            <div class="ad-container">
+                <div class="ad-content">
+                    <h1 class="ad-heading">Куиз вечери и турнири</h1>
+                    <p class="ad-text">Разгледайте събитията ни на нашата Facebook страница</p>
+                    <a id="submitButton" href="https://www.facebook.com/majesticcafe2018/events" target="_blank"
+                        rel="noopener noreferrer" class="ad-button">Събития</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div> --}}
 
     <!-- Menu Section -->
     <section id="menu" class="p-0 menu section "{{--  style="background-image:url('assets/img/cool-background.png')" --}}>
         <!-- Section Title -->
-        
+
         <div class="container section-title" data-aos="fade-up">
             <h2>Меню</h2>
             <h1><span>Разгледайте нашето</span> <span class="description-title">меню</span></h1>
@@ -59,16 +59,17 @@
                             aria-controls="{{ $category->id }}" aria-selected="{{ $k === 0 ? 'true' : 'false' }}"
                             style="font-weight: 550;">
                             <div class="cat-icon-container">
-                                @if($k == 0)
-                                <i class="fa-solid fa-stroopwafel"></i>
+                                @if ($k == 0)
+                                    <i class="fa-solid fa-stroopwafel"></i>
                                 @elseif($k == 1)
                                     <i class="fas fa-mug-hot"></i>
                                 @elseif($k == 2)
-                                <i class="fas fa-cocktail"></i>
+                                    <i class="fas fa-cocktail"></i>
                                 @elseif($k == 3)
                                     <i class="fa-solid fa-utensils"></i>
                                 @endif
-                                <div class="pt-1" style="font-size: 16px; font-family: Sofia Sans Condensed, sans-serif;">{{ $category->name }}</div>
+                                <div class="pt-1" style="font-size: 16px; font-family: Sofia Sans Condensed, sans-serif;">
+                                    {{ $category->name }}</div>
                             </div>
                         </button>
                     </li>

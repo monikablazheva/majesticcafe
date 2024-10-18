@@ -3,9 +3,16 @@
 @section('content')
     <div class="container">
         <h1>Подкатегории</h1>
+
+        <form action="{{ route('subcategory.search') }}" method="GET" class="d-flex flex-row align-items-center flex-wrap pt-3">
+            <input type="text" name="search" placeholder="Търси по име" class="form-control w-25">
+            <button type="submit" class="btn btn-outline-success">Търси</button>
+        </form>
+
         <div class="d-flex justify-content-end">
             <a type="button" href="{{ route('subcategory.create') }}" class="btn btn-dark">Добави подкатегория</a>
         </div>
+
         <table class="table">
             <thead>
                 <tr>
@@ -57,5 +64,8 @@
                 @endforeach
             </tbody>
         </table>
+
+        {{ $subcategories->links('pagination::bootstrap-5') }}
+
     </div>
 @endsection

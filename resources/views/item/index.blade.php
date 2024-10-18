@@ -3,9 +3,16 @@
 @section('content')
     <div class="container">
         <h1>Артикули</h1>
+
+        <form action="{{ route('items.search') }}" method="GET" class="d-flex flex-row align-items-center flex-wrap pt-3">
+            <input type="text" name="search" placeholder="Търси по име" class="form-control w-25">
+            <button type="submit" class="btn btn-outline-success">Търси</button>
+        </form>
+
         <div class="d-flex justify-content-end">
             <a type="button" href="{{ route('item.create') }}" class="btn btn-dark">Добави артикул</a>
         </div>
+        
         <table class="table">
             <thead>
                 <tr>
@@ -33,8 +40,9 @@
             <tbody>
                 @foreach ($items as $item)
                     <tr>
-                        <td class="align-middle" data-bs-toggle="tooltip" data-bs-placement="top" title="{{$item->name}}">
-                            {{ Illuminate\Support\Str::limit($item->name, 20, $end='...') }}
+                        <td class="align-middle" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="{{ $item->name }}">
+                            {{ Illuminate\Support\Str::limit($item->name, 20, $end = '...') }}
                         </td>
                         <td class="align-middle">
                             {{ $item->subcategory->name }}
@@ -42,13 +50,13 @@
                         <td class="align-middle">
                             {{ $item->quantity }}
 
-                            @if($item->quantity_type->name == "грамове")
+                            @if ($item->quantity_type->name == 'грамове')
                                 гр.
-                            @elseif($item->quantity_type->name == "милилитри")
+                            @elseif($item->quantity_type->name == 'милилитри')
                                 мл.
-                            @elseif($item->quantity_type->name == "литър")
+                            @elseif($item->quantity_type->name == 'литър')
                                 л.
-                            @elseif($item->quantity_type->name == "брой")
+                            @elseif($item->quantity_type->name == 'брой')
                                 бр.
                             @endif
                         </td>
@@ -65,18 +73,18 @@
                         </td>
                         <td class="text-end">
                             <a href="{{ route('item.show', $item) }}" class="btn btn-link text-dark"
-                            data-bs-toggle="tooltip" data-bs-placement="top" title="Детайли">
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Детайли">
                                 <i class="fa-solid fa-circle-info fs-5"></i>
                             </a>
                             <a href="{{ route('item.edit', $item) }}" class="btn btn-link text-dark"
-                            data-bs-toggle="tooltip" data-bs-placement="top" title="Промяна">
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Промяна">
                                 <i class="fa-solid fa-pen-to-square fs-5"></i>
                             </a>
                             <form action="{{ route('item.destroy', $item) }}" method="POST" class="d-inline">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-link text-dark"
-                                data-bs-toggle="tooltip" data-bs-placement="top" title="Изтриване">
+                                <button type="submit" class="btn btn-link text-dark" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Изтриване">
                                     <i class="fa-solid fa-trash fs-5"></i>
                                 </button>
                             </form>
@@ -85,5 +93,8 @@
                 @endforeach
             </tbody>
         </table>
+
+        {{ $items->links('pagination::bootstrap-5') }}
+
     </div>
 @endsection

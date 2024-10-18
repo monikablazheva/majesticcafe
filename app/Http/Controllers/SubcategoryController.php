@@ -5,16 +5,18 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreSubcategoryRequest;
 use App\Models\{Subcategory, Category};
 use Illuminate\Http\Request;
-use App\Services\FileService;
+use App\Services\{FileService, SearchService};
 
 class SubcategoryController extends Controller
 {
     protected FileService $fileService;
+    protected SearchService $searchService;
 
     public function __construct()
     {
         //$this->middleware('auth');        
         $this->fileService = new FileService();
+        $this->searchService = new SearchService();
     }
 
     /**
@@ -22,7 +24,7 @@ class SubcategoryController extends Controller
      */
     public function index()
     {
-        $subcategories = Subcategory::all();
+        $subcategories = Subcategory::paginate(10);
         return view('subcategory.index', compact('subcategories'));
     }
 
@@ -128,5 +130,14 @@ class SubcategoryController extends Controller
 
         $subcategory->delete();
         return to_route('subcategory.index')->with('message', 'Subcategory was deleted');
+    }
+
+    public function search(Request $request)
+    {
+        $searchTerm = $request->input('search');
+
+        $subcategories = $this->searchService->search(new Subcategory(), $searchTerm);
+
+        return view('subcategory.index', compact('subcategories'));
     }
 }

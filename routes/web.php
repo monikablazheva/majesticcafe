@@ -14,7 +14,7 @@ Route::get('/menu', [App\Http\Controllers\MenuController::class, 'index'])->name
 
 Route::group(['middleware' => ['role:admin']], function () {
     Route::resource('subcategory', SubcategoryController::class);
-});
-Route::group(['middleware' => ['role:admin']], function () {
     Route::resource('item', ItemController::class);
+    Route::get('/search', [App\Http\Controllers\ItemController::class, 'search'])->name('items.search');
+    Route::get('/search-subcategory', [App\Http\Controllers\SubcategoryController::class, 'search'])->name('subcategory.search');
 });
