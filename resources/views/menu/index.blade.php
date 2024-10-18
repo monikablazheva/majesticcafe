@@ -20,7 +20,7 @@
 
 </div> --}}
 
-    <div id="popupOverlay">
+    {{-- <div id="popupOverlay">
         <div id="popup">
             <span id="closePopup">&times;</span>
 
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- Menu Section -->
     <section id="menu" class="p-0 menu section "{{--  style="background-image:url('assets/img/cool-background.png')" --}}>
