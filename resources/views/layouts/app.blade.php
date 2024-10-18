@@ -132,8 +132,8 @@
                         <div>
                             <h4>Работно време</h4>
                             <p>
-                                <strong>пон - пет:</strong> <span>8:00ч. - 22:00ч.</span><br>
-                                <strong>съб - нед:</strong>: <span>10:00ч. - 22:00ч.</span>
+                                <strong>пон - пет:</strong> <span>08:00ч. - 23:00ч.</span><br>
+                                <strong>съб - нед:</strong> <span>10:00ч. - 23:00ч.</span>
                             </p>
                         </div>
                     </div>
