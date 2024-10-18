@@ -152,8 +152,8 @@
                         <i class="icon bi bi-clock flex-shrink-0"></i>
                         <div>
                             <h3>Работно време<br></h3>
-                            <p><strong>пон - пет:</strong> 8:00ч. - 22:00ч.; </br>
-                                <strong>съб - нед:</strong> 10:00ч. - 22:00ч.
+                            <p><strong>пон - пет:</strong> 8:00ч. - 23:00ч.; </br>
+                                <strong>съб - нед:</strong> 10:00ч. - 23:00ч.
                             </p>
                         </div>
                     </div>
