@@ -281,7 +281,7 @@ input:-webkit-autofill:active{
 
 /* Popup overlay styles */
 #popupOverlay {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
