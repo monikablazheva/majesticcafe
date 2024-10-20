@@ -21,22 +21,22 @@
 
     <section id="hero" class="hero section light-background">
 
-      <div class="container">
-          <div class="row gy-4 justify-content-center p-3">
-              <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                  <h1 data-aos="fade-up">Разгледайте<br>нашето меню</h1>
-                  <p data-aos="fade-up" data-aos-delay="100">Перфектната комбинация от вкусни ястия и освежаващи напитки</p>
-                  <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-                      <a href="{{ route('menu') }}" class="btn-get-started">Меню</a>
-                  </div>
-              </div>
-              <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-                  <img src="assets/img/hero-salad.webp" class="img-fluid animated" alt="">
-              </div>
-          </div>
-      </div>
+        <div class="container">
+            <div class="row gy-4 justify-content-center p-3">
+                <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <h1 data-aos="fade-up">Разгледайте<br>нашето меню</h1>
+                    <p data-aos="fade-up" data-aos-delay="100">Перфектната комбинация от вкусни ястия и освежаващи напитки</p>
+                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <a href="{{ route('menu') }}" class="btn-get-started">Меню</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+                    <img src="assets/img/hero-salad.webp" class="img-fluid animated" alt="">
+                </div>
+            </div>
+        </div>
 
-  </section><!-- /Hero Section -->
+    </section><!-- /Hero Section -->
 
 
     <!-- About Section -->
@@ -53,39 +53,63 @@
             <div class="row gy-4">
                 <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
                     <img src="assets/img/majestic-about.jpg" class="img-fluid mb-4" alt="">
-                    <div class="book-a-table">
-                        <h3>Запазете своята маса</h3>
-                        <p>0887 909 707</p>
-                    </div>
                 </div>
                 <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
                     <div class="content ps-0 ps-lg-5">
                         <p class="fst-italic">
-                            Добре дошли в Majestic cafe, където всеки момент се превръща в удоволствие! От ранна закуска до
-                            късна вечеря, ние предлагаме вкусутии, което ще задоволи всеки вкус.
+                            Добре дошли в Majestic - BAR & Dinner, където всеки момент се превръща в удоволствие! От ранна
+                            закуска до
+                            късна вечеря, ние предлагаме вкусутии, което ще задоволят всеки вкус.
                         </p>
                         <ul>
                             <li><i class="bi bi-check-circle-fill"></i> <span>При нас ще се насладите на топло кафе,
                                     приготвено с любов.</span></li>
                             <li><i class="bi bi-check-circle-fill"></i> <span>Освежете се с нашите домашно приготвени
-                                    лимонади и фрешове, направени от пресни плодове, които ще ви заредят с енергия и
+                                    лимонади, фрешове и шейкове, направени от пресни плодове, които ще ви заредят с енергия
+                                    и
                                     свежест.</span></li>
                             <li><i class="bi bi-check-circle-fill"></i> <span>За сладко изкушение, опитайте нашите пухкави
-                                    гофрети и вкусни палачинки, сервирани с разнообразие от топинги и добавки, които ще ви
+                                    гофрети, мекички палачинки или пък здравословни закуски, сервирани с разнообразие от
+                                    топинги и добавки, които ще ви
                                     накарат да се усмихнете.</span></li>
                             <li><i class="bi bi-check-circle-fill"></i> <span>Не пропускайте и нашите авторски коктейли,
                                     създадени с майсторство и страст, за да ви предложат неповторимо изживяване.</span></li>
-                        </ul>
-                        <p>
-                            Ние се грижим за вашето удобство и доброто ви настроение, като ви предлагаме уютна атмосфера и
-                            приятелско обслужване. Насладете на вкусни моменти с нас!
-                        </p>
+                            <li><i class="bi bi-check-circle-fill"></i> <span>Започнете и завършете деня си с неустоимите ни
+                                    сцециалитети
+                                    - здравословно приготвени ястия и свежи салати, идеални за спокоен обяд и весела вечер с
+                                    приятели или семейство.</span></li>
+                        </ul> 
 
-                        <div class="position-relative mt-4">
-                            <img src="assets/img/lemonade.jpeg" class="img-fluid" alt="">
+                        <div class="book-a-table">
+                            <h3>Запазете своята маса</h3>
+                            <p>0887 909 707</p>
                         </div>
                     </div>
                 </div>
+
+            </div>
+            <div class="row gy-4 mt-1">
+
+                    <div class="col-lg-7">
+                        
+                            <img src="assets/img/dinner.jpeg" class="img-fluid" alt="">
+                        
+                    </div>
+                    <div class="col-lg-5">
+                        
+                            <img src="assets/img/cafe.jpg" class="img-fluid" alt="">
+                            <p class="p-2 mt-2">
+                                Ние се грижим за вашето удобство и доброто ви настроение, като ви предлагаме уютна атмосфера и
+                                приятелско обслужване. Създайте си вкусни и незабравими моменти с нас!
+                            </p>
+                        
+                    </div>
+                    {{-- <div class="col-lg-4">
+                        <p>
+                            Ние се грижим за вашето удобство и доброто ви настроение, като ви предлагаме уютна атмосфера и
+                            приятелско обслужване. Създайте си вкусни и незабравими моменти с нас!
+                        </p>
+                    </div> --}}
             </div>
 
         </div>
@@ -153,7 +177,7 @@
                         <div>
                             <h3>Работно време<br></h3>
                             <p><strong>пон - пет:</strong> 08:00ч. - 23:00ч. </br>
-                               <strong>съб - нед:</strong> 10:00ч. - 23:00ч.
+                                <strong>съб - нед:</strong> 10:00ч. - 23:00ч.
                             </p>
                         </div>
                     </div>
