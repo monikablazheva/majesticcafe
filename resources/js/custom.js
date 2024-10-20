@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to close the popup
     function closePopupFunc() {
-      popupOverlay.style.display = 'none';
+      popupOverlay.css({display:"none"})
+      // popupOverlay.style.display = 'none';
     }
     // Automatically open the popup when the page loads
     openPopup();
