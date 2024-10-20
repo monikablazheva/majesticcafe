@@ -329,27 +329,27 @@ input:-webkit-autofill:active{
 }
 
 /* Ad styles */
-.ad-container {
+.adv-container {
   width: 50%;
   text-align: left;
 }
 
-.ad-heading {
+.adv-heading {
   font-size: 2rem;
   color: #333;
 }
 
-.ad-content {
+.adv-content {
   padding-bottom: 10px;
 }
 
-.ad-text {
+.adv-text {
   font-size: 1.2rem;
   margin-bottom: 20px;
   color: #666;
 }
 
-.ad-button {
+.adv-button {
   background-color: #9bbb30;
   color: #fff !important;
   padding: 15px 30px;
@@ -358,11 +358,10 @@ input:-webkit-autofill:active{
   letter-spacing: 1.5px;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s ease;
   border-radius: 50px;
 }
 
-.ad-button:hover {
+.adv-button:hover {
   background-color: #8ca92c;
 }
 
@@ -374,7 +373,7 @@ input:-webkit-autofill:active{
     flex-direction: column;
   }
 
-  .popup-image-container, .ad-container {
+  .popup-image-container, .adv-container {
     width: 100%;
     text-align: center;
     padding: 0%;
@@ -384,15 +383,15 @@ input:-webkit-autofill:active{
     margin-bottom: 20px;
   }
 
-  .ad-heading {
+  .adv-heading {
     font-size: 1.5rem;
   }
 
-  .ad-text {
+  .adv-text {
     font-size: 1rem;
   }
 
-  .ad-button {
+  .adv-button {
     padding: 10px 20px;
   }
 }

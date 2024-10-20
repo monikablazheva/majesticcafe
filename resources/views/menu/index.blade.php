@@ -28,12 +28,12 @@
                 <img src="assets/img/events-2.webp" alt="Restaurant Event" class="popup-image">
             </div>
 
-            <div class="ad-container">
-                <div class="ad-content">
-                    <h1 class="ad-heading">Куиз вечери и турнири</h1>
-                    <p class="ad-text">Разгледайте събитията ни на нашата Facebook страница</p>
+            <div class="adv-container">
+                <div class="adv-content">
+                    <h1 class="adv-heading">Куиз вечери и турнири</h1>
+                    <p class="adv-text">Разгледайте събитията ни на нашата Facebook страница</p>
                     <a id="submitButton" href="https://www.facebook.com/majesticcafe2018/events" target="_blank"
-                        rel="noopener noreferrer" class="ad-button">Събития</a>
+                        rel="noopener noreferrer" class="adv-button">Събития</a>
                 </div>
             </div>
         </div>
