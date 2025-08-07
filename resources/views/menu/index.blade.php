@@ -1,3 +1,13 @@
+@php
+    if (!function_exists('convertBGNToEUR')) {
+        function convertBGNToEUR($bgn) {
+            $exchangeRate = 1.95583;
+            return $bgn / $exchangeRate;
+        }
+    }
+@endphp
+
+
 @extends('layouts.app')
 
 
@@ -133,7 +143,8 @@
                                                                 </p>
                                                             </div>
                                                             <div class="menu-item-price">
-                                                                {{ number_format($item->price, 2) }} лв.</div>
+                                                                {{ number_format($item->price, 2) }}&nbsp;лв. | {{ number_format(convertBGNToEUR($item->price), 2) }}&nbsp;€
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 @else
@@ -162,7 +173,7 @@
                                                             </div>
                                                             <div>
                                                                 <div class="menu-item-price">
-                                                                    {{ number_format($item->price, 2) }} лв.
+                                                                    {{ number_format($item->price, 2) }}&nbsp;лв. | {{ number_format(convertBGNToEUR($item->price), 2) }}&nbsp;€
                                                                 </div>
 
                                                             </div>
