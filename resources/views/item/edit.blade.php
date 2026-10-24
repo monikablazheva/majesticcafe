@@ -49,7 +49,7 @@
                             <input type="number" class="form-control" value="{{ $item->quantity }}" name='quantity'>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Цена</label>
+                            <label class="form-label">Цена (€)</label>
                             <input type="number" step="0.01" class="form-control" value="{{ $item->price }}"
                                 name='price'>
                         </div>

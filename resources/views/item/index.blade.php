@@ -61,7 +61,7 @@
                             @endif
                         </td>
                         <td class="align-middle">
-                            {{ number_format($item->price, 2) }} лв.
+                            {{ number_format($item->price, 2) }} €
                         </td>
                         <td class="align-middle">
                             {{ $item->description }}

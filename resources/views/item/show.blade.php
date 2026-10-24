@@ -39,7 +39,7 @@
                             Цена
                         </dt>
                         <dd class = "col-sm-10">
-                            {{ number_format($item->price, 2) }} лв.
+                            {{ number_format($item->price, 2) }} €
                         </dd>
                         <dt class = "col-sm-2">
                             Описание
